@@ -9,8 +9,8 @@ services:
       - "8080:15672"  # Management UI
       - "5672:5672"   # AMQP protocol port
     environment:
-      RABBITMQ_DEFAULT_USER: seuguru
-      RABBITMQ_DEFAULT_PASS: seuguru
+      RABBITMQ_DEFAULT_USER: rabbitmq
+      RABBITMQ_DEFAULT_PASS: rabbitmq
     volumes:
       - rabbitmq_data:/var/lib/rabbitmq 
 
